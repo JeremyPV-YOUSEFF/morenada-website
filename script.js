@@ -1,4 +1,4 @@
-  const TOTAL = 7;
+const TOTAL = 8;
   let current = 0, bloqueado = false;
   const slides = Array.from(document.querySelectorAll('.slide'));
   const dotsEl = document.getElementById('dots');

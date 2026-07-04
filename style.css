@@ -1,4 +1,4 @@
-  :root {
+:root {
     --rojo: #C0392B;
     --dorado: #E8A020;
     --azul: #2C3E7A;
@@ -62,15 +62,7 @@
   .btn-o { background:transparent; color:var(--dorado); border:2px solid var(--dorado); }
   .btn-w { background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.6); }
 
-  .hero-eyebrow { 
-    font-family:Arial,sans-serif; 
-    font-size:0.7rem; 
-    letter-spacing:0.22em; 
-    text-transform:uppercase; 
-    color:var(--dorado); 
-    margin-bottom:0.9rem; 
-    padding-bottom: 25px;
-}
+  .hero-eyebrow { font-family:Arial,sans-serif; padding-bottom: 35px; font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--dorado); margin-bottom:0.9rem; }
   .hero-title { font-size:clamp(2.3rem,6.5vw,4.8rem); line-height:1.05; color:var(--crema); text-shadow:0 2px 24px rgba(0,0,0,0.5); margin-bottom:0.3rem; }
   .hero-title span { color:var(--dorado); display:block; }
   .hero-sub { font-family:Arial,sans-serif; font-size:0.93rem; color:rgba(253,246,227,0.67); max-width:500px; line-height:1.72; margin:0.9rem auto 1.8rem; }
@@ -129,6 +121,23 @@
   .scroll-hint { position:absolute; bottom:1.3rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:3px; opacity:0.45; animation:bounce 2s infinite; cursor:pointer; font-family:Arial,sans-serif; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--dorado); }
   @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
   .scroll-hint svg { width:18px; height:18px; stroke:var(--dorado); fill:none; stroke-width:2; }
+
+
+  #s-festividades { background:linear-gradient(160deg,#1a0a2e 0%,#2d1b4e 50%,#1a2550 100%); }
+  .fest-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.2rem; margin-top:1.4rem; }
+  .fest-card {
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(232,160,32,0.3);
+    border-top:3px solid var(--dorado);
+    padding:1.4rem 1.2rem;
+    transition:transform 0.2s, background 0.2s;
+    cursor:default;
+  }
+  .fest-card:hover { transform:translateY(-4px); background:rgba(255,255,255,0.09); }
+  .fest-icon { font-size:2rem; margin-bottom:0.6rem; }
+  .fest-fecha { font-family:Arial,sans-serif; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--dorado); margin-bottom:0.4rem; }
+  .fest-card h3 { font-size:0.95rem; color:var(--crema); margin-bottom:0.5rem; }
+  .fest-card p { font-family:Arial,sans-serif; font-size:0.8rem; line-height:1.65; color:rgba(253,246,227,0.68); }
 
   .slide-footer { margin-top:1.8rem; padding-top:1.3rem; border-top:1px solid rgba(0,0,0,0.1); font-family:Arial,sans-serif; font-size:0.72rem; color:#999; text-align:center; line-height:1.8; }
   .slide-footer span { color:var(--rojo); }
